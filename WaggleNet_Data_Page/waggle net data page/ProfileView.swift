@@ -8,15 +8,16 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ProfileView: View {
     // User properties
     let username = "Jason Yao"
     let userEmail = "qyao7@illinois.edu"
-    let tempWidth = 0.0
     let frameWidth = 0.275 * UIScreen.main.bounds.width
-    let bottomWidth = 90.0
+    // let bottomWidth = 90.0
     let fontSize = 21.0
     let titleFontSize = 28.0
+    
+    @Binding var path: NavigationPath
     
     var body: some View {
         
@@ -34,10 +35,8 @@ struct ContentView: View {
                             .foregroundColor(.yellow)
                     }
                     Divider()
-                        .frame(width: .infinity, height: 10)
+                        .frame(height: 10)
                     HStack {
-                        Spacer()
-                            .frame(width: tempWidth)
                         Text("Username")
                             .font(.custom("Helvetica Neue", size: fontSize))
                             .frame(width: frameWidth, alignment: .leading)
@@ -45,11 +44,8 @@ struct ContentView: View {
                             .font(.custom("Helvetica Neue", size: fontSize))
                             .frame(maxWidth: .infinity, alignment: .leading) // Align to the left
                     }
-                    // userEmail
                     .frame(maxWidth: .infinity, alignment: .leading)
                     HStack {
-                        Spacer()
-                            .frame(width: tempWidth)
                         Text("Email")
                             .font(.custom("Helvetica Neue", size: fontSize))
                             .frame(width: frameWidth, alignment: .leading)
@@ -96,7 +92,9 @@ struct ContentView: View {
             HStack {
                 Spacer()
                     .frame(width: 25)
-                Button(action: { print("Button tapped!") }) {
+                Button(action: {
+                    path.removeLast()
+                }) {
                     Image(systemName: "chevron.backward")
                         .font(.title)
                         .padding()
@@ -105,12 +103,13 @@ struct ContentView: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
 
-struct ContentView_Previews: PreviewProvider {
+struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ProfileView(path: .constant(NavigationPath()))
     }
 }

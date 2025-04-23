@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:WaggleNet_Data_Page"
+      name = "WaggleNet_Data_Page">
+      <Group
+         location = "group:waggle net data page"
+         name = "waggle net data page">
+         <FileRef
+            location = "group:DataView.swift">
+         </FileRef>
+         <FileRef
+            location = "group:ProfileView.swift">
+         </FileRef>
+         <FileRef
+            location = "group:HiveMetricsView.swift">
+         </FileRef>
+         <FileRef
+            location = "group:LineChartView.swift">
+         </FileRef>
+         <FileRef
+            location = "group:waggle_net_data_page.entitlements">
+         </FileRef>
+         <FileRef
+            location = "group:waggle_net_data_pageApp.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Assets.xcassets">
+         </FileRef>
+         <Group
+            location = "group:Preview Content"
+            name = "Preview Content">
+            <FileRef
+               location = "group:Preview Assets.xcassets">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:MetricCard.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:waggle net data pageUITests"
+         name = "waggle net data pageUITests">
+         <FileRef
+            location = "group:waggle_net_data_pageUITests.swift">
+         </FileRef>
+         <FileRef
+            location = "group:waggle_net_data_pageUITestsLaunchTests.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:waggle net data page.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:waggle net data pageTests"
+         name = "waggle net data pageTests">
+         <FileRef
+            location = "group:waggle_net_data_pageTests.swift">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:WaggleNet_iOS.xcworkspace">
+   </FileRef>
+   <Group
+      location = "group:WaggleNet_Profile_Page"
+      name = "WaggleNet_Profile_Page">
+      <Group
+         location = "group:WaggleNet_SwiftUIUITests"
+         name = "WaggleNet_SwiftUIUITests">
+         <FileRef
+            location = "group:WaggleNet_SwiftUIUITestsLaunchTests.swift">
+         </FileRef>
+         <FileRef
+            location = "group:WaggleNet_SwiftUIUITests.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:WaggleNet_SwiftUI"
+         name = "WaggleNet_SwiftUI">
+         <FileRef
+            location = "group:Assets.xcassets">
+         </FileRef>
+         <Group
+            location = "group:Preview Content"
+            name = "Preview Content">
+            <FileRef
+               location = "group:Preview Assets.xcassets">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:WaggleNet_SwiftUIApp.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:WaggleNet_SwiftUITests"
+         name = "WaggleNet_SwiftUITests">
+         <FileRef
+            location = "group:WaggleNet_SwiftUITests.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:WaggleNet_SwiftUI.xcodeproj">
+      </FileRef>
+      <Group
+         location = "group:amplify"
+         name = "amplify">
+         <FileRef
+            location = "group:cli.json">
+         </FileRef>
+         <Group
+            location = "group:backend"
+            name = "backend">
+            <FileRef
+               location = "group:backend-config.json">
+            </FileRef>
+            <Group
+               location = "group:types"
+               name = "types">
+               <FileRef
+                  location = "group:amplify-dependent-resources-ref.d.ts">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:auth"
+               name = "auth">
+               <Group
+                  location = "group:WaggleNetiOS"
+                  name = "WaggleNetiOS">
+                  <FileRef
+                     location = "group:cli-inputs.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:tags.json">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:README.md">
+         </FileRef>
+         <Group
+            location = "group:hooks"
+            name = "hooks">
+            <FileRef
+               location = "group:README.md">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:team-provider-info.json">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>

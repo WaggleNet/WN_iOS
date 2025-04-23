@@ -9,6 +9,8 @@ import SwiftUI
 
 
 struct HiveMetricsView: View {
+    @Binding var path: NavigationPath
+
     var body: some View {
         VStack(alignment: .leading, spacing:0) {
             HStack {
@@ -23,7 +25,7 @@ struct HiveMetricsView: View {
                 Spacer()
                 
                 Button(action: {
-                    print("Profile Page")
+                    path.append(AppPage.page2)
                 }) {
                     Image(systemName: "person.crop.circle.fill")
                         .resizable()
