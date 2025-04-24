@@ -21,7 +21,7 @@ struct ProfileView: View {
     
     var body: some View {
         
-        ZStack(alignment: .topLeading) {
+        ZStack() {
             ScrollView {
                 VStack(alignment: .center, spacing: 10) {
                     // userName
@@ -72,36 +72,16 @@ struct ProfileView: View {
                 .padding(.bottom, 0)
                 Spacer()
                     .frame(height: 500)
-            /*
-            HStack {
-                 Image(systemName: "hexagon.tophalf.filled")
-                 .font(.system(size: 30))
-                 .foregroundColor(.yellow)
-                 Spacer()
-                 .frame(width: bottomWidth, alignment: .leading)
-                 Image(systemName: "person.crop.circle")
-                 .font(.system(size: titleFontSize)) // Adjust size
-                 .foregroundColor(.blue)
-                 }
-                 .padding(.horizontal, 200)
-                 .padding(.bottom, 10)
-                 .padding(.top, 25)
-                 .background(Color.yellow.opacity(0.3)) // Visualize the bottom section
-            */
             }
-            HStack {
-                Spacer()
-                    .frame(width: 25)
-                Button(action: {
+            Button(action: {
                     path.removeLast()
                 }) {
-                    Image(systemName: "chevron.backward")
-                        .font(.title)
-                        .padding()
+                    Image(systemName: "arrow.left.circle.fill")
+                        .font(.largeTitle)
                         .background(Circle().fill(Color.yellow))
                         .foregroundColor(.white)
                 }
-            }
+                .offset(x: -0.4 * UIScreen.main.bounds.width, y: -0.4 * UIScreen.main.bounds.height)
         }
         .navigationBarBackButtonHidden(true)
     }
